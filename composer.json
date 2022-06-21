@@ -3,5 +3,11 @@
         "psr-4": {
             "MyApp\\": "src/"
         }
+    },
+    "require": {
+        "sentry/sdk": "^3.2",
+        "sentry/sentry": "^3.6",
+        "php-http/curl-client": "^2.2",
+        "bugsnag/bugsnag": "^3.0"
     }
 }
