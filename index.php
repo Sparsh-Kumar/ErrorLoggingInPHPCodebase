@@ -14,11 +14,11 @@ $player = new Player();
 $game = new Game();
 $gameController = new GameController();
 
-$bugsnag = Bugsnag\Client::make('e67c70d5585993301f4ac92650bb4fd7');
+$bugsnag = Bugsnag\Client::make('API_KEY');
 Bugsnag\Handler::register($bugsnag);
 
 try {
-    throw new Exception('Another Exception by Sparsh');
+    throw new Exception('Yet Another Exception by Sparsh');
 } catch (Exception $exception) {
     $bugsnag->notifyException($exception);
 }
